@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#fff2ed">
+  <title>For My Favorite Person ♡</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <audio id="backgroundMusic" loop preload="auto">
+    <source src="music/anniversary-song.mp3" type="audio/mpeg">
+  </audio>
+  <div class="floating-hearts" aria-hidden="true"></div>
+
+  <main class="page">
+    <header class="intro">
+      <p class="eyebrow">A little something made with love</p>
+      <h1>Happy 4th Anniversary <span>♡</span></h1>
+      <p class="subtitle">For my favorite person, today and always.</p>
+    </header>
+
+    <section class="memory-layout" aria-label="Anniversary letter and photos">
+      <figure class="photo polaroid photo-one">
+        <img src="photos/photo-1.jpeg" alt="A favorite memory of us"
+             onerror="this.style.display='none'; this.nextElementSibling.style.display='grid'">
+        <div class="photo-placeholder"><span>♡</span><small>Add photo 1</small></div>
+        <figcaption>One of my favorite days ♡</figcaption>
+      </figure>
+
+      <figure class="photo polaroid photo-two">
+        <img src="photos/photo-2.jpg" alt="Another favorite memory of us"
+             onerror="this.style.display='none'; this.nextElementSibling.style.display='grid'">
+        <div class="photo-placeholder"><span>♡</span><small>Add photo 2</small></div>
+        <figcaption>My favorite person ♡</figcaption>
+      </figure>
+
+      <figure class="photo polaroid photo-three">
+        <img src="photos/photo-3.jpeg" alt="A special moment together"
+             onerror="this.style.display='none'; this.nextElementSibling.style.display='grid'">
+        <div class="photo-placeholder"><span>♡</span><small>Add photo 3</small></div>
+        <figcaption>Us, being us ♡</figcaption>
+      </figure>
+
+      <figure class="photo polaroid photo-four">
+        <img src="photos/photo-4.jpeg" alt="A memory you want to keep forever"
+             onerror="this.style.display='none'; this.nextElementSibling.style.display='grid'">
+        <div class="photo-placeholder"><span>♡</span><small>Add photo 4</small></div>
+        <figcaption>My Everything ♡</figcaption>
+      </figure>
+
+      <section class="letter-scene">
+        <p class="scene-note" id="sceneNote">There's a little something for you...</p>
+
+        <div class="envelope-wrap" id="envelopeWrap">
+          <div class="envelope">
+            <div class="envelope-back"></div>
+            <article class="letter" id="letter" aria-hidden="true">
+              <div class="letter-inner">
+                <p class="letter-kicker">To my mameee,</p>
+                <h2>Happy Anniversary, <span class="her-name">Mameeee!</span> ♡</h2>
+                <div class="letter-message">
+                  <p>Alam mo naman po na I'm not really good at expressing my feelings that deeply, but I want you to know how much I love you. I love every version of you, and I will always keep loving every version of you, no matter how much we grow and change as time goes by.</p>
+                  <p>I'm always thankful kasi dumating ka sa buhay ko. Before you came into my life, I never knew that someone could make my days this much happier and my life this much more meaningful. Without you, life would be so boring. You bring so much joy, happiness, and love into my life, and I'm so lucky to have someone like you by my side. You make even the simplest moments special just by being there.</p>
+                  <p>And just like what I always tell you, I'll keep loving you until I die. Hindi ako magsasawa sa'yo, Mameee. Kahit lumipas pa ang ilang araw, linggo, buwan, taon, o kahit ilang dekada pa, I will always choose to love you. I know that life won't always be easy, and there will be times when things get difficult for us, but I want you to know that I'm willing to face all of those things with you. Whatever life brings us, I will always do my best to love you, understand you, and stay by your side. I don't just want to be with you during the happy moments; I also want to be there when you're tired, sad, struggling, or feeling like the world is too heavy for you. I want to be someone you can always run to, someone you can feel safe with, and someone who will remind you that you don't have to face everything alone.</p>
+                  <p>Even though we're not married yet, in my heart, I already feel like I'm married to you. For me, you're not just someone I love right now; you're the person I want to spend the rest of my life with. Kaya, for richer or poorer, in sickness and in health, I will always choose you. I will stay with you, grow with you, and struggle with you. I want to build a future with you, create more memories with you, and grow old with you. I want to experience all the different versions of life with you, because there's no one else I'd rather share it with.</p>
+                  <p>Thank you for loving me, Mameee. Thank you for accepting every version of me, even the parts of myself that I sometimes struggle to understand. Thank you for being patient with me, for staying with me, and for making me feel loved in ways I can't always explain. I know I'm not perfect, and I know there are times when I might not express my love the way you deserve, but please know that my love for you is genuine. I'll keep learning how to love you better, how to understand you more, and how to become the person you deserve to have by your side. I may not always have the perfect words to say, but I hope my actions will always remind you that you are loved, valued, and appreciated.</p>
+                  <p>Happy Anniversary ulit, Mameee!. I hope we get to celebrate countless more anniversaries together, until celebrating another year with you becomes just one of the many beautiful things we get to do as we grow old together. Hindi man ako palaging magaling magsabi ng nararamdaman ko, I hope you will never have to question how much you mean to me.</p>
+                  <p>Ikaw ngayon, ikaw bukas, ikaw sa mga susunod pang taon, at ikaw hanggang sa huling hininga ko. I will always choose you, Mameee. I love you, palagi.</p>
+                </div>
+
+                <p class="letter-signoff">With all my love, always,</p>
+                <p class="signature">Dadeee <span>♡</span></p>
+              </div>
+            </article>
+            <div class="envelope-front"></div>
+            <div class="envelope-flap"></div>
+            <div class="wax-seal" aria-hidden="true">♡</div>
+          </div>
+        </div>
+
+        <button class="open-button" id="openButton" type="button" aria-expanded="false">
+          Open Me <span>♡</span>
+        </button>
+        <p class="hint" id="hint">Psst... this is just for you.</p>
+      </section>
+    </section>
+
+    <footer>
+      <p>Made with love, just for you <span>♡</span></p>
+    </footer>
+  </main>
+</body>
+</html>
